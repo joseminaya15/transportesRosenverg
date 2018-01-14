@@ -166,7 +166,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>file/nosotros.jpg" alt="">           
                     </div>
                     <div class="mdl-card__supporting-text">
-                        <p>Transportes Rosenverg se cre&oacute; con la finalidad de brindar un excelente servicio de taxi y tours de transporte personal desde el Aeropuerto Internacional Jorge Chavez hacia toda la ciudad y viceversa.</p>
+                        <p>Transportes Rosenverg se cre&oacute; con la finalidad de brindar un excelente servicio de taxi y tours de transporte personal desde el Aeropuerto Internacional Jorge Ch&aacute;vez hacia toda la ciudad y viceversa.</p>
                         <h2 class="subtitle">Visi&oacute;n</h2>
                         <p>Brindar un excelente servicio de taxi teniendo como principios base la puntualidad, confiabilidad, &eacute;tica y responsabilidad para nuestros clientes.</p>
                         <h2 class="subtitle">Misi&oacute;n</h2>
