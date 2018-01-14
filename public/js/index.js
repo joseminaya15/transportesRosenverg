@@ -156,7 +156,7 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-function solicitarEstimacion() {
+function solicitarReserva() {
 	var nombre_completo = $('#nombre').val();
 	var celular  		= $('#celular').val();
 	var fecha_llegada	= $('#fecha').val();
@@ -168,6 +168,7 @@ function solicitarEstimacion() {
 	var correo			= $('#correo').val();
 	var origen			= $('#origen').val();
 	var destino			= $('#destino').val();
+	var comentario      = $('#comentario').val();
 
 	if(nombre_completo == null || nombre_completo == '') {
 		return;
@@ -214,9 +215,10 @@ function solicitarEstimacion() {
 				  servicio 		  : servicio,
 				  personas 		  : personas,
 				  aerolinea 	  : aerolinea,
-				  correo 	  : correo,
-				  origen 	  : origen,
-				  destino 	  : destino},
+				  correo 	  	  : correo,
+				  origen 	  	  : origen,
+				  destino 	  	  : destino,
+				  comentario 	  : comentario},
 		url   : 'Reserva/solicitarEstimacion',
 		type  : 'POST'
 	}).done(function(data){

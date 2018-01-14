@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="mdl-icon">
                             <i class="mdi mdi-flight"></i>
                         </div>
-                        <select class="selectpicker" title="Aerol&iacute;nea" id="aerolinea" onchange="functionAirline()">
+                        <select class="selectpicker" title="Aerol&iacute;nea" id="aerolinea" >
                             <option value="Aerogal">Aerogal</option>
                             <option value="Aerolineas Argentinas">Aerolineas Argentinas</option>
                             <option value="Aeroméxico">Aerom&eacute;xico</option>

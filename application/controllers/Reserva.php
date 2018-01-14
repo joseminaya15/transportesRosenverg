@@ -20,6 +20,7 @@ class Reserva extends CI_Controller {
 	function solicitarEstimacion() {
 		    $data['error']  = EXIT_ERROR;
         $data['msj']   = null;
+
         try {
             $nombre_completo = $this->input->post('nombre_completo');
           	$celular    	   = $this->input->post('celular');
@@ -32,6 +33,7 @@ class Reserva extends CI_Controller {
           	$correo 	   	 = $this->input->post('correo');
           	$origen 	   	 = $this->input->post('origen');
           	$destino 	   	 = $this->input->post('destino');
+            $comentario    = $this->input->post('comentario');
 
           	//GUARDAMOS EN SESIÓN LOS DATOS
           	$session = array('nombre_completo' => $nombre_completo,
@@ -44,12 +46,13 @@ class Reserva extends CI_Controller {
                   					 'aerolinea' 	     => $aerolinea,
                   					 'correo' 	     => $correo,
                   					 'origen' 	     => $origen,
-                  					 'destino' 	     => $destino);
+                  					 'destino' 	     => $destino,
+                             'comentario'    => $comentario);
           	$this->session->set_userdata($session);
 
           	//ENVIAR EMAIL AL CLIENTE Y A LA EMPRESA
-            /*$this->sendGmailCliente($email, $datoInsert['Id']);
-          	$this->sendGmailSap($email, $datoInsert['Id']);*/
+            $this->sendGmailCliente($email);
+          	$this->sendGmailSap($email);
           	$data['msj'] = $datoInsert['msj'];
 			$data['error'] = $datoInsert['error'];
         } catch (Exception $e) {
@@ -58,7 +61,7 @@ class Reserva extends CI_Controller {
         echo json_encode($data);
 	}
 
-	function sendGmailSap($email, $id_usuario) {
+	function sendGmailSap($email) {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {  
@@ -79,29 +82,39 @@ class Reserva extends CI_Controller {
        //cargamos la configuración para enviar con gmail
        $this->email->initialize($configGmail);
        $this->email->from('userauto@prymera.com');
-       $this->email->to('jhonatanibericom@gmail.com');//EMAIL AL QUIÉN IRÁ DIRIGIDO
+       $this->email->to(_getSesion('correo'));//EMAIL AL QUIÉN IRÁ DIRIGIDO
        $this->email->subject('Bienvenido/a a Transportes Rosenverg');
 
        //CONSTRUIMOS EL HTML
-       $texto = '<!DOCTYPE html>
-				 <html>
-				 <head>
-					<title>Transportes Rosenverg</title>
-				 </head>
-				 <body>
-					<h1>Hola SAP</h1>
-					<h1>El Cliente: '.$_SESSION['nombre_completo'].'<h1>
-					<h1>Con Email: '.$_SESSION['correo'].'<h1>
-					<h1>Con el teléfono: '.$_SESSION['celular'].'<h1>
-					<h1>Con el N° de Vuelo: '.$_SESSION['vuelo'].'<h1>
-					<h1>De la aerolínea: '.$_SESSION['aerolinea'].'<h1>
-					<h1>Solicitó un vehículo<h1>
-					<h1>Con el servicio:'.$_SESSION['servicio'].'<h1>
-					<h1>Con nro personas:'.$_SESSION['personas'].'<h1>
-					<h1>Con origen:'.$_SESSION['origen'].'<h1>
-					<h1>Con destino:'.$_SESSION['destino'].'<h1>
-				 </body>
-				</html>';
+       $texto = '<body>
+  <h2 style="text-align: center;color: #0152aa;">Taxi Rosenverg:</h2>
+
+  <p style="text-align: center;color: black;">Es un gusto saludarlo e informarle que el siguiente cliente ha solicitado un vehículo. Por favor cont&aacute;ctelo a la brevedad y realice la reserva respectiva.</p>
+
+  <p style="margin-left: 30px;color: black;">Agradecemos de antemano su colaboraci&oacute;n.</p>
+   
+  <h3 style="margin-left: 30px;color: #0152aa;">Datos del cliente:</h3>
+  <p style="margin-left: 30px;color: black;">
+  Nombres: </br>
+  Apellidos: '._getSesion('nombre_completo').'</br>
+  Celular: '._getSesion('celular').'</br>
+  Correo electr&oacute;nico: '._getSesion('correo').'</br>
+  Comentario: '._getSesion('comentario').'</br></p>
+   
+   
+  <h3 style="margin-left: 30px;color: #0152aa;">Datos de la reserva:</h3>
+  <p style="margin-left: 30px;color: black;">
+  Fecha de llegada: '._getSesion('fecha_llegada').'</br>
+  Hora: '._getSesion('hora').'</br>
+  Vuelo: '._getSesion('vuelo').'</br>
+  Servicio: '._getSesion('servicio').'</br>
+  Cant de personas: '._getSesion('personas').'</br>
+  Punto de origen: '._getSesion('origen').'</br>
+  Punto de destino: '._getSesion('destino').'</br>
+  Aerolinea: '._getSesion('aerolinea').'
+  </p>
+</body>
+';
         $this->email->message($texto);//AQUI SE INSERTA EL HTML
         $this->email->send();
         $data['error'] = EXIT_SUCCESS;

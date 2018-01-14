@@ -49,7 +49,7 @@ class Inicio extends CI_Controller {
        $texto = '<body>
 				<h2 style="text-align: center;color: #0152aa;">Estimado Colaborador:</h2>
 
-				<p style="text-align: center;color: black;">Es un gusto saludarlo e informarle que el siguiente cliente ha solicitado un vehículo. Por favor cont&aacute;ctelo a la brevedad y realice el seguimiento respectivo.</p>
+				<p style="text-align: center;color: black;">Es un gusto saludarlo e informarle que el siguiente cliente ha solicitado un vehículo. Por favor cont&aacute;ctelo a la brevedad y realice la reserva respectiva.</p>
 
 				<p style="margin-left: 30px;color: black;">Agradecemos de antemano su colaboraci&oacute;n.</p>
 				 
