@@ -1153,6 +1153,12 @@ header.dtp-header .dtp-actual-year {
         font-size: 32px;
         line-height: 38px;
     }
+    .section.background-grey{
+        padding: 30px 5px;
+    }
+    .mdl-card-servicios .mdl-card__supporting-text{
+        padding: 0;
+    }
     footer{
         text-align: center;
     }
