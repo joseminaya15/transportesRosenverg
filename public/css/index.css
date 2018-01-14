@@ -387,6 +387,9 @@ button.btn.btn-default.active:VISITED,
     color: #01553D;
     margin: 3px 0;
 }
+#principal .owl-carousel .owl-item .item img:nth-child(2){
+    display: none;
+}
 /*NOSOTROS*/
 #nosotros .mdl-card{
     background-color: transparent;
@@ -1086,6 +1089,12 @@ header.dtp-header .dtp-actual-year {
     .navbar-toggle{
         border: none;
         background-color: transparent !important;
+    }
+    #principal .owl-carousel .owl-item .item img:nth-child(1){
+        display: none;
+    }
+    #principal .owl-carousel .owl-item .item img:nth-child(2){
+        display: block;
     }
 }
 @media ( max-width: 420px ){

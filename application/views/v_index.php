@@ -71,13 +71,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <section id="principal">
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <img src="<?php echo RUTA_IMG?>fondo/fondo1.jpg" alt="">
+                        <img src="<?php echo RUTA_IMG?>fondo/fondo1.jpg" alt="">                        
+                        <img src="<?php echo RUTA_IMG?>fondo/fondo1.png" alt="">
                     </div>
                     <div class="item">
                         <img src="<?php echo RUTA_IMG?>fondo/fondo2.jpg" alt="">
+                        <img src="<?php echo RUTA_IMG?>fondo/fondo2.png" alt="">
                     </div>
                     <div class="item">
                         <img src="<?php echo RUTA_IMG?>fondo/fondo3.jpg" alt="">
+                        <img src="<?php echo RUTA_IMG?>fondo/fondo3.png" alt="">
                     </div>
                 </div>
                 <div class="col-sm-6 cont-carousel-left">
