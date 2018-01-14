@@ -264,7 +264,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <span class="inicA">Chatea con nosotros</span>
                 </div>
                 <div class="robePlugin">    
-                    <div class="fb-page" data-href="https://www.facebook.com/Smiledu.pe" data-tabs="messages" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Smiledu.pe"><a href="https://www.facebook.com/Smiledu.pe">Smiledu.pe</a></blockquote></div></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/taxitoursrosenverg/" data-tabs="messages" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/taxitoursrosenverg/"><a href="https://www.facebook.com/taxitoursrosenverg/"></a></blockquote></div></div>
                 </div>
             </div>
             <button id="chat-close" class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
