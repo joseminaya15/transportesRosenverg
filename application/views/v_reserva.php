@@ -137,8 +137,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="mdi mdi-directions_car"></i>
                         </div>
                         <select class="selectpicker" title="Tipo de vehiculo" id="servicio" onchange="cambiarNro()">
-                            <option value="Básico">B&aacute;sico</option>
-                            <option value="Élite">&Eacute;lite</option>
+                            <option value="Auto">Auto</option>
+                            <option value="Minivan">Minivan</option>
                             <option value="Van">Van</option>
                         </select>
                     </div>

@@ -167,9 +167,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="mdl-card__supporting-text">
                         <p>Transportes Rosenverg se cre&oacute; con la finalidad de brindar un excelente servicio de taxi y tours de transporte personal desde el Aeropuerto Internacional Jorge Ch&aacute;vez hacia toda la ciudad y viceversa.</p>
-                        <h2 class="subtitle">Visi&oacute;n</h2>
-                        <p>Brindar un excelente servicio de taxi teniendo como principios base la puntualidad, confiabilidad, &eacute;tica y responsabilidad para nuestros clientes.</p>
                         <h2 class="subtitle">Misi&oacute;n</h2>
+                        <p>Brindar un excelente servicio de taxi teniendo como principios base la puntualidad, confiabilidad, &eacute;tica y responsabilidad para nuestros clientes.</p>
+                        <h2 class="subtitle">Visi&oacute;n</h2>
                         <p>Ser la empresa lider de taxis a nivel nacional, reconocida por un servicio de alta calidad, seguridad, confort y continuo mejoramiento en el servicio de la flota; a cargo de experimentados conductores. Esto les asegura una experiencia inolvidable a nuestros pasajeros.</p>
                         <p>No duden en contactarnos, estamos a su disposici&oacute;n las 24 horas del d&iacute;a, los 365 d&iacute;as del a&ntilde;o.Transportes Rosenverg les agradece por su preferencia.</p>
                     </div>
@@ -204,7 +204,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="mdl-card mdl-card-servicios">
                                 <div class="mdl-card__title">
                                     <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>file/basico.jpg">
-                                    <p>1 - 3 asientos</p>
+                                    <p>1 - 3 pax</p>
                                 </div>
                                 <div class="mdl-card__supporting-text">
                                     <table class="mdl-data-table mdl-js-data-table">
@@ -245,7 +245,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="mdl-card mdl-card-servicios">
                                 <div class="mdl-card__title">
                                     <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>file/elite.jpg">
-                                    <p>4 - 5 asientos</p>
+                                    <p>4 - 5 pax</p>
                                 </div>
                                 <div class="mdl-card__supporting-text">
                                     <table class="mdl-data-table mdl-js-data-table">
@@ -286,7 +286,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="mdl-card mdl-card-servicios">
                                 <div class="mdl-card__title">
                                     <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>file/van.jpg">
-                                    <p>5 - 8 asientos</p>
+                                    <p>5 - 8 pax</p>
                                 </div>
                                 <div class="mdl-card__supporting-text">
                                     <table class="mdl-data-table mdl-js-data-table">
