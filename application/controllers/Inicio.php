@@ -34,8 +34,8 @@ class Inicio extends CI_Controller {
                             'protocol'  => 'smtp',
                             'smtp_host' => 'ssl://smtp.gmail.com',
                             'smtp_port' => 465,
-                            'smtp_user' => 'miauto@prymera.pe',
-                            'smtp_pass' => '8hUpuv6da_@v',
+                            'smtp_user' => 'user@taxirosenverg.com',
+                            'smtp_pass' => 'ZRNX3SwQkWJH',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n"
@@ -43,7 +43,7 @@ class Inicio extends CI_Controller {
        $poliza = null;
        //cargamos la configuración para enviar con gmail
        $this->email->initialize($configGmail);
-       $this->email->from('userauto@prymera.com');
+       $this->email->from('user@taxirosenverg.com');
        $this->email->to($email);
        $this->email->subject('Bienvenido/a a Transportes Ronsenverg');
        $texto = '<body>

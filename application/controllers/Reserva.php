@@ -59,8 +59,8 @@ class Reserva extends CI_Controller {
                             'protocol'  => 'smtp',
                             'smtp_host' => 'ssl://smtp.gmail.com',
                             'smtp_port' => 465,
-                            'smtp_user' => 'miauto@prymera.pe',
-                            'smtp_pass' => '8hUpuv6da_@v',
+                            'smtp_user' => 'user@taxirosenverg.com',
+                            'smtp_pass' => 'ZRNX3SwQkWJH',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n"
