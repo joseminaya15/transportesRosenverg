@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>datetimepicker/css/bootstrap-material-datetimepicker.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>flexSlider/flexslider.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.css?v=<?php echo time();?>">

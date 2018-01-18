@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logos/favicon.png">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/dist/css/bootstrap-select.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
