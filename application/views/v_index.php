@@ -685,7 +685,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?php echo RUTA_PLUGINS?>flexSlider/jquery.flexslider.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/js/material.min.js?v=<?php echo time();?>"></script>
-        <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
         <script type="text/javascript">
