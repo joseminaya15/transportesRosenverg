@@ -35,24 +35,9 @@ class Reserva extends CI_Controller {
           	$destino 	   	 = $this->input->post('destino');
             $comentario    = $this->input->post('comentario');
 
-          	//GUARDAMOS EN SESIÓN LOS DATOS
-          	$session = array('nombre_completo' => $nombre_completo,
-                  					 'celular' 		     => $celular,
-                  					 'fecha_llegada' 		       => $fecha_llegada,
-                  					 'hora' 		       => $hora,
-                  					 'vuelo' 	  	     => $vuelo,
-                  					 'servicio' 	     => $servicio,
-                  					 'personas' 	     => $personas,
-                  					 'aerolinea' 	     => $aerolinea,
-                  					 'correo' 	     => $correo,
-                  					 'origen' 	     => $origen,
-                  					 'destino' 	     => $destino,
-                             'comentario'    => $comentario);
-          	$this->session->set_userdata($session);
-
           	//ENVIAR EMAIL AL CLIENTE Y A LA EMPRESA
-            $this->sendGmailCliente($email);
-          	$this->sendGmailSap($email);
+          	$this->sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
+              $personas,$aerolinea,$correo,$origen,$destino,$comentario);
           	$data['msj'] = $datoInsert['msj'];
 			$data['error'] = $datoInsert['error'];
         } catch (Exception $e) {
@@ -61,7 +46,8 @@ class Reserva extends CI_Controller {
         echo json_encode($data);
 	}
 
-	function sendGmailSap($email) {
+	function sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
+              $personas,$aerolinea,$correo,$origen,$destino,$comentario) {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {  
@@ -96,22 +82,22 @@ class Reserva extends CI_Controller {
   <h3 style="margin-left: 30px;color: #0152aa;">Datos del cliente:</h3>
   <p style="margin-left: 30px;color: black;">
   Nombres: </br>
-  Apellidos: '._getSesion('nombre_completo').'</br>
-  Celular: '._getSesion('celular').'</br>
-  Correo electr&oacute;nico: '._getSesion('correo').'</br>
-  Comentario: '._getSesion('comentario').'</br></p>
+  Apellidos: '.$nombre_completo.'</br>
+  Celular: '.$celular.'</br>
+  Correo electr&oacute;nico: '.$correo.'</br>
+  Comentario: '.$comentario.'</br></p>
    
    
   <h3 style="margin-left: 30px;color: #0152aa;">Datos de la reserva:</h3>
   <p style="margin-left: 30px;color: black;">
-  Fecha de llegada: '._getSesion('fecha_llegada').'</br>
-  Hora: '._getSesion('hora').'</br>
-  Vuelo: '._getSesion('vuelo').'</br>
-  Servicio: '._getSesion('servicio').'</br>
-  Cant de personas: '._getSesion('personas').'</br>
-  Punto de origen: '._getSesion('origen').'</br>
-  Punto de destino: '._getSesion('destino').'</br>
-  Aerolinea: '._getSesion('aerolinea').'
+  Fecha de llegada: '.$fecha_llegada.'</br>
+  Hora: '.$hora.'</br>
+  Vuelo: '.$vuelo.'</br>
+  Servicio: '.$servicio.'</br>
+  Cant de personas: '.$personas.'</br>
+  Punto de origen: '.$origen.'</br>
+  Punto de destino: '.$destino.'</br>
+  Aerolinea: '.$aerolinea.'
   </p>
 </body>
 ';
