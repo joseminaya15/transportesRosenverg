@@ -502,7 +502,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="mdl-card mdl-card-tour">
                         <div class="mdl-card__title">
-                            <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>tour/centro_lima.jpeg">
+                            <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>tour/centro_lima.jpg">
                             <p>Centro hist&oacute;rico de Lima</p>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="openModalTour($(this))">Ver m&aacute;s</button>
                         </div>
