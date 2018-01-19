@@ -225,6 +225,7 @@ function solicitarReserva() {
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
+        		limpiarCampos();
         	}else {
         		return;
         	}
@@ -275,21 +276,20 @@ function limpiar() {
 
 function cambiarNro() {
 	var data = $('#servicio').val();
-	console.log(data);
-	if(data == "Básico") {
+	if(data == "Auto") {
 		$('#personas').val("1 - 3");
 		$( "#personas" ).prop( "disabled", true );
 		setTimeout(function(){ 
 			$( "#personas" ).parent().addClass('is-focused');
 		 }, 500);
-	}else if(data == "Élite") {
+	}else if(data == "Minivan") {
 		$('#personas').val("4 - 5");
 		$( "#personas" ).prop( "disabled", true );
 		setTimeout(function(){ 
 			$( "#personas" ).parent().addClass('is-focused');
 		 }, 500);
 	}else if(data == "Van") {
-		$('#personas').val("5 - 7");
+		$('#personas').val("5 - 8");
 		$( "#personas" ).prop( "disabled", true );
 		setTimeout(function(){ 
 			$( "#personas" ).parent().addClass('is-focused');
@@ -307,3 +307,19 @@ function cambiarNro() {
 	js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.5";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
+
+function limpiarCampos(){
+	$('#nombre').val("");
+	$('#celular').val("");
+	$('#fecha').val("");
+	$('#hora').val("");
+	$('#vuelo').val("");
+	$('#servicio').val('0');
+	$('.selectpicker').selectpicker('refresh');
+	$('#personas').val("");
+	$('#aerolinea').val("");
+	$('#correo').val("");
+	$('#origen').val("");
+	$('#destino').val("");
+	$('#comentario').val("");
+}

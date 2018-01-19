@@ -38,8 +38,7 @@ class Reserva extends CI_Controller {
             //ENVIAR EMAIL AL CLIENTE Y A LA EMPRESA
             $this->sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
               $personas,$aerolinea,$correo,$origen,$destino,$comentario);
-            $data['msj'] = $datoInsert['msj'];
-      $data['error'] = $datoInsert['error'];
+            $data['error'] = EXIT_SUCCESS;
         } catch (Exception $e) {
             $data['msj'] = $e->getMessage();
         }

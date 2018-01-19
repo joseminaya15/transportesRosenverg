@@ -90,7 +90,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <i class="mdi mdi-call"></i>
                         </div>
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                            <input class="mdl-textfield__input" type="text" id="celular" maxlength="9" onkeypress="return valida(event);">
+                            <input class="mdl-textfield__input" type="text" id="celular" maxlength="50">
                             <label class="mdl-textfield__label" for="celular">Celular</label>
                         </div>
                     </div>
