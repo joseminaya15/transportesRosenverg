@@ -19,8 +19,9 @@ class Inicio extends CI_Controller {
         $this->sendMailGmail($nombre, $email, $telefono, $mensaje);
         $data['error'] = EXIT_SUCCESS;
       }catch (Exception $e){
+        $data['msj'] = $e->getMessage();
       }
-      return json_encode(array_map('utf8_encode', $data));
+      return json_encode($data);
   }
 
   function sendMailGmail($nombre, $email, $telefono, $mensaje) {
@@ -71,6 +72,7 @@ class Inicio extends CI_Controller {
        $this->email->send();
         $data['error'] = EXIT_SUCCESS;
       }catch (Exception $e){
+        $data['msj'] = $e->getMessage();
       }
       return json_encode(array_map('utf8_encode', $data));
      }

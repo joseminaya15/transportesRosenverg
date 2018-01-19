@@ -142,12 +142,19 @@ function enviarEmail() {
 		dataType : 'json'
 	}).done(function(data){
 		try{
-			$('#modelo').html('');
-			$('#modelo').append('<option value="">Modelo</option>');
-			$('#modelo').append(data.comboModelo);
-		} catch (err){
-			msj('error',err.message);
-		}
+        	data = JSON.parse(data);
+        	if(data.error == 0){
+        		$('#nombre').val();
+		    	$('#email').val();
+				$('#telefono').val();
+				$('#mensaje').val();
+        	}else {
+        		return;
+        	}
+      } catch (err){
+        msj('error',err.message);
+      }
+
 	});
 }
 

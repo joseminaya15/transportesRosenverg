@@ -63,11 +63,11 @@ class Reserva extends CI_Controller {
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n"
-                          );    
+                          );   
        //cargamos la configuración para enviar con gmail
        $this->email->initialize($configGmail);
-       $this->email->from('userauto@prymera.com');
-       $this->email->to(_getSesion('correo'));//EMAIL AL QUIÉN IRÁ DIRIGIDO
+       $this->email->from('user@taxirosenverg.com');
+       $this->email->to($correo);//EMAIL AL QUIÉN IRÁ DIRIGIDO
        $this->email->subject('Bienvenido/a a Transportes Rosenverg');
 
        //CONSTRUIMOS EL HTML
