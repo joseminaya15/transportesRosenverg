@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <meta name="date"                   content="November  30, 2017" />
         <meta name="language"               content="es">
         <meta name="theme-color"            content="#245C72">
-        <title>Transporte Rosenverg</title>
+        <title>Transportes Rosenverg</title>
         <link rel="shortcut icon" href="<?php echo RUTA_IMG?>logos/favicon.png">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/dist/css/bootstrap-select.min.css?v=<?php echo time();?>">
@@ -300,7 +300,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             } else {
                 $('select').selectpicker();
             }
-            initButtonCalendarDaysMaxToday('fecha');
+            initButtonCalendarDaysMinToday('fecha');
             initMaskInputs('fecha');
             $('#chat').on('click',function(e){
                 e.stopPropagation();
