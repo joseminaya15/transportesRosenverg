@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>engagement.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>general.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>general.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">                          
     </head>
     <body data-spy="scroll">
