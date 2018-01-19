@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Reserva extends CI_Controller {
 
-	function __construct() {
+  function __construct() {
         parent::__construct();
         $this->load->helper("url");//BORRAR CACHÉ DE LA PÁGINA
         $this->output->set_header('Last-Modified:'.gmdate('D, d M Y H:i:s').'GMT');
@@ -12,41 +12,41 @@ class Reserva extends CI_Controller {
         $this->output->set_header('Pragma: no-cache');
     }
 
-	public function index()
-	{
-		$this->load->view('v_reserva');
-	}
+  public function index()
+  {
+    $this->load->view('v_reserva');
+  }
 
-	function solicitarEstimacion() {
-		    $data['error']  = EXIT_ERROR;
+  function solicitarEstimacion() {
+        $data['error']  = EXIT_ERROR;
         $data['msj']   = null;
 
         try {
             $nombre_completo = $this->input->post('nombre_completo');
-          	$celular    	   = $this->input->post('celular');
-          	$fecha_llegada           = $this->input->post('fecha_llegada');
-          	$hora  			     = $this->input->post('hora');
-          	$vuelo           = $this->input->post('vuelo');
-          	$servicio 	   	 = $this->input->post('servicio');
-          	$personas 	   	 = $this->input->post('personas');
-          	$aerolinea 	   	 = $this->input->post('aerolinea');
-          	$correo 	   	 = $this->input->post('correo');
-          	$origen 	   	 = $this->input->post('origen');
-          	$destino 	   	 = $this->input->post('destino');
+            $celular         = $this->input->post('celular');
+            $fecha_llegada           = $this->input->post('fecha_llegada');
+            $hora            = $this->input->post('hora');
+            $vuelo           = $this->input->post('vuelo');
+            $servicio        = $this->input->post('servicio');
+            $personas        = $this->input->post('personas');
+            $aerolinea       = $this->input->post('aerolinea');
+            $correo        = $this->input->post('correo');
+            $origen        = $this->input->post('origen');
+            $destino       = $this->input->post('destino');
             $comentario    = $this->input->post('comentario');
 
-          	//ENVIAR EMAIL AL CLIENTE Y A LA EMPRESA
-          	$this->sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
+            //ENVIAR EMAIL AL CLIENTE Y A LA EMPRESA
+            $this->sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
               $personas,$aerolinea,$correo,$origen,$destino,$comentario);
-          	$data['msj'] = $datoInsert['msj'];
-			$data['error'] = $datoInsert['error'];
+            $data['msj'] = $datoInsert['msj'];
+      $data['error'] = $datoInsert['error'];
         } catch (Exception $e) {
             $data['msj'] = $e->getMessage();
         }
         echo json_encode($data);
-	}
+  }
 
-	function sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
+  function sendGmailSap($nombre_completo,$celular,$fecha_llegada,$hora,$vuelo,$servicio,
               $personas,$aerolinea,$correo,$origen,$destino,$comentario) {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
@@ -57,8 +57,8 @@ class Reserva extends CI_Controller {
        //configuracion para gmail
        $configGmail = array(
                             'protocol'  => 'smtp',
-                            'smtp_host' => 'ssl://smtp.gmail.com',
-                            'smtp_port' => 465,
+                            'smtp_host' => 'mail.taxirosenverg.com',
+                            'smtp_port' => 587,
                             'smtp_user' => 'user@taxirosenverg.com',
                             'smtp_pass' => 'ZRNX3SwQkWJH',
                             'mailtype'  => 'html',
@@ -81,23 +81,43 @@ class Reserva extends CI_Controller {
    
   <h3 style="margin-left: 30px;color: #0152aa;">Datos del cliente:</h3>
   <p style="margin-left: 30px;color: black;">
-  Nombres: </br>
-  Apellidos: '.$nombre_completo.'</br>
-  Celular: '.$celular.'</br>
-  Correo electr&oacute;nico: '.$correo.'</br>
-  Comentario: '.$comentario.'</br></p>
+  Nombre Completo: '.$nombre_completo.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Celular: '.$celular.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Correo electr&oacute;nico: '.$correo.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Comentario: '.$comentario.'
+  </p>
    
    
   <h3 style="margin-left: 30px;color: #0152aa;">Datos de la reserva:</h3>
   <p style="margin-left: 30px;color: black;">
-  Fecha de llegada: '.$fecha_llegada.'</br>
-  Hora: '.$hora.'</br>
-  Vuelo: '.$vuelo.'</br>
-  Servicio: '.$servicio.'</br>
-  Cant de personas: '.$personas.'</br>
-  Punto de origen: '.$origen.'</br>
-  Punto de destino: '.$destino.'</br>
-  Aerolinea: '.$aerolinea.'
+  Fecha de llegada: '.$fecha_llegada.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+  Hora: '.$hora.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+  Vuelo: '.$vuelo.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+  Servicio: '.$servicio.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Cant de personas: '.$personas.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Punto de origen: '.$origen.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Punto de destino: '.$destino.'
+  </p>
+  <p style="margin-left: 30px;color: black;">
+    Aerolinea: '.$aerolinea.'
   </p>
 </body>
 ';
@@ -105,7 +125,7 @@ class Reserva extends CI_Controller {
         $this->email->send();
         $data['error'] = EXIT_SUCCESS;
       }catch (Exception $e){
-      	$data['msj'] = $e->getMessage();
+        $data['msj'] = $e->getMessage();
       }
       return json_encode(array_map('utf8_encode', $data));
     }
