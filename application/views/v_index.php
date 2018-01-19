@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
                 <div class="col-sm-6 cont-carousel-left">
-                    <h2>Tu taxi desde $20 d&oacute;lares desde el Aeropuerto a Miraflores</h2>
+                    <h2>Tu taxi desde $20 desde el Aeropuerto a Miraflores</h2>
                     <img class="logo-trip" src="<?php echo RUTA_IMG?>logos/logo.svg" alt="">
                 </div>
                 <div class="col-sm-6 cont-carousel right">
@@ -527,6 +527,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container">
                 <p>&copy;2017 Transportes Rosenverg S.A.C</p>
                 <p class="font-light">Cal. 15 Mza. 14A Lote. 16 A.H. Laura Caller - Los Olivos</p>
+                <p class="font-light">Celular: <a href="tel:+51996312529">996312529</a> - Correo: <a href="mailto:taxirosenverg@gmail.com">taxirosenverg@gmail.com</a></p>
             </div>
         </footer>
 

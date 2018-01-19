@@ -274,6 +274,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container">
                 <p>&copy;2017 Transportes Rosenverg S.A.C</p>
                 <p class="font-light">Cal. 15 Mza. 14A Lote. 16 A.H. Laura Caller - Los Olivos</p>
+                <p class="font-light">Celular: <a href="tel:+51996312529">996312529</a> - Correo: <a href="mailto:taxirosenverg@gmail.com">taxirosenverg@gmail.com</a></p>
             </div>
         </footer>
 

@@ -25,6 +25,7 @@ a, a:FOCUS, a:ACTIVE, a:HOVER, a:VISITED, p, nav a, nav button {
 }
 .font-light{
     font-family: 'RobotoLight';
+    line-height: 16px;
 }
 .background-grey{
     background-color: #F8F8F8;
@@ -727,13 +728,17 @@ button.btn.btn-default.active:VISITED,
 /*FOOTER*/
 footer{
     background-color: #01553D;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 footer p{
     color: #FFFFFF;
     font-family: 'RobotoMedium';
     margin: 0;
     line-height: 18px;
+}
+footer p a{
+    color: #FFFFFF !important;
+    text-decoration: none;
 }
 
 /*MDL-INPUT*/
