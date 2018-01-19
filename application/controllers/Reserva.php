@@ -67,7 +67,7 @@ class Reserva extends CI_Controller {
        //cargamos la configuración para enviar con gmail
        $this->email->initialize($configGmail);
        $this->email->from('user@taxirosenverg.com');
-       $this->email->to($correo);//EMAIL AL QUIÉN IRÁ DIRIGIDO
+       $this->email->to('taxirosenverg@gmail.com');//EMAIL AL QUIÉN IRÁ DIRIGIDO
        $this->email->subject('Bienvenido/a a Transportes Rosenverg');
 
        //CONSTRUIMOS EL HTML

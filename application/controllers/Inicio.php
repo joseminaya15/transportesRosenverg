@@ -45,7 +45,7 @@ class Inicio extends CI_Controller {
        //cargamos la configuraci贸n para enviar con gmail
        $this->email->initialize($configGmail);
        $this->email->from('user@taxirosenverg.com');
-       $this->email->to($email);
+       $this->email->to('taxirosenverg@gmail.com');
        $this->email->subject('Bienvenido/a a Transportes Ronsenverg');
        $texto = '<body>
         <h2 style="text-align: center;color: #0152aa;">Estimado Colaborador:</h2>
