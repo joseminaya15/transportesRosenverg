@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
                 <div class="col-sm-6 cont-carousel-left">
-                    <h2>Tu taxi desde $20 desde el Aeropuerto a Miraflores</h2>
+                    <h2>Taxi desde $20 del Aeropuerto a Miraflores</h2>
                     <img class="logo-trip" src="<?php echo RUTA_IMG?>logos/logo.svg" alt="">
                 </div>
                 <div class="col-sm-6 cont-carousel right">
