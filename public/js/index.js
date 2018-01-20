@@ -132,6 +132,11 @@ function enviarEmail() {
 		return;
 	}
 
+	$('#nombre').val("");
+	$('#email').val("");
+	$('#telefono').val("");
+	$('#mensaje').val("");
+
 	$.ajax({
 		data  : { nombres : nombres,
 				  email   : email,
