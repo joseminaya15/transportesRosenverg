@@ -19,8 +19,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>flexSlider/flexslider.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>scrollflow/css/eskju.jquery.scrollflow.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/css/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"	  href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
@@ -28,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>engagement.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>general.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">                          
+        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.min.css?v=<?php echo time();?>">                          
     </head>
     <body data-spy="scroll">
         <div id="home">
@@ -288,8 +286,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?php echo RUTA_PLUGINS?>jquery-mask/jquery.mask.min.js?v=<?php echo time();?>"></script>  	
     	<script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>  	
     	<script src="<?php echo RUTA_PLUGINS?>scrollflow/js/eskju.jquery.scrollflow.min.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_PLUGINS?>flexSlider/jquery.flexslider.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/js/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
