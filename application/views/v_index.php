@@ -18,23 +18,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>flexSlider/flexslider.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>scrollflow/css/eskju.jquery.scrollflow.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/css/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>engagement.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>general.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">                          
+        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.min.css?v=<?php echo time();?>">                          
     </head>
     <body data-spy="scroll">
         <div id="home">
             <div class="header">
                 <div class="container">
                     <div class="call-header">
-                        <a href="tel:+016579057"><i class="mdi mdi-call"></i><span>LL&aacute;manos: 01-6579057</span></a><label class="separacion"> - </label>
+                        <a href="tel:016579057"><i class="mdi mdi-call"></i><span>LL&aacute;manos: 01-6579057</span></a><label class="separacion"> - </label>
                         <a href="tel:+51996312529"><i class="fa fa-whatsapp"></i><span>Whatsapp: +51 996312529</span></a>
                     </div>
                     <div class="redes-header">
@@ -83,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
                 <div class="col-sm-6 cont-carousel-left">
-                    <h2>Tu taxi desde $20 desde el Aeropuerto a Miraflores</h2>
+                    <h2>Taxi desde $20 del Aeropuerto a Miraflores</h2>
                     <img class="logo-trip" src="<?php echo RUTA_IMG?>logos/logo.svg" alt="">
                 </div>
                 <div class="col-sm-6 cont-carousel right">
@@ -502,7 +499,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="mdl-card mdl-card-tour">
                         <div class="mdl-card__title">
-                            <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>tour/centro_lima.jpeg">
+                            <img alt="transporte rosenverg" src="<?php echo RUTA_IMG?>tour/centro_lima.jpg">
                             <p>Centro hist&oacute;rico de Lima</p>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="openModalTour($(this))">Ver m&aacute;s</button>
                         </div>
@@ -527,7 +524,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container">
                 <p>&copy;2017 Transportes Rosenverg S.A.C</p>
                 <p class="font-light">Cal. 15 Mza. 14A Lote. 16 A.H. Laura Caller - Los Olivos</p>
-                <p class="font-light">Celular: <a href="tel:+51996312529">996312529</a> - Correo: <a href="mailto:taxirosenverg@gmail.com">taxirosenverg@gmail.com</a></p>
+                <p class="font-light">Celular: <a href="tel:+51996312529">+51996312529</a> - Correo: <a href="mailto:taxirosenverg@gmail.com">taxirosenverg@gmail.com</a></p>
             </div>
         </footer>
 
@@ -681,10 +678,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/dist/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.min.js?v=<?php echo time();?>"></script>   
-        <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>    
-        <script src="<?php echo RUTA_PLUGINS?>scrollflow/js/eskju.jquery.scrollflow.min.js?v=<?php echo time();?>"></script>
-        <script src="<?php echo RUTA_PLUGINS?>flexSlider/jquery.flexslider.js?v=<?php echo time();?>"></script>
-        <script src="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/js/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>

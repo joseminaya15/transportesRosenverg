@@ -19,23 +19,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>toaster/toastr.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>flexSlider/flexslider.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>scrollflow/css/eskju.jquery.scrollflow.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/css/material.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"	  href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>engagement.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>general.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.css?v=<?php echo time();?>">                          
+        <link rel="stylesheet"    href="<?php echo RUTA_CSS?>index.min.css?v=<?php echo time();?>">                          
     </head>
     <body data-spy="scroll">
         <div id="home">
             <div class="header">
                 <div class="container">
                     <div class="call-header">
-                        <a href="tel:+016579057"><i class="mdi mdi-call"></i><span>LL&aacute;manos: 01-6579057</span></a><label class="separacion"> - </label>
+                        <a href="tel:016579057"><i class="mdi mdi-call"></i><span>LL&aacute;manos: 01-6579057</span></a><label class="separacion"> - </label>
                         <a href="tel:+51996312529"><i class="fa fa-whatsapp"></i><span>Whatsapp: +51 996312529</span></a>
                     </div>
                     <div class="redes-header">
@@ -46,30 +43,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-    		<nav class="navbar navbar-default">
-    			<div class="container">
-    				<div class="navbar-header">
-    					<button id="nav-icon3" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-    						<span class="sr-only">Toggle navigation</span>
-    						<span class="icon-bar"></span>
-    						<span class="icon-bar"></span>
-    						<span class="icon-bar"></span>
-    					</button>
-    					<a class="navbar-brand logo" href="Inicio">Rosenverg</a>
-    				</div>
-    			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    			      	<ul class="nav navbar-nav navbar-right">
-    				        <li><a href="Inicio">Inicio</a></li>
-    				        <li><a href="Inicio#nosotros">Nosotros</a></li>
-    				        <li><a href="Inicio#servicios">Servicios</a></li>
-    				        <li><a href="Inicio#tour">Tours</a></li>
-    				        <li class="active"><a href="#tour">Reservas</a></li>
-    			      	</ul>
-    			    </div>
-    		  	</div>
-    		</nav>
-    	</div>
-		<section id="Reservas" class="section m-b-50">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button id="nav-icon3" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand logo" href="Inicio">Rosenverg</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Inicio">Inicio</a></li>
+                            <li><a href="Inicio#nosotros">Nosotros</a></li>
+                            <li><a href="Inicio#servicios">Servicios</a></li>
+                            <li><a href="Inicio#tour">Tours</a></li>
+                            <li class="active"><a href="#tour">Reservas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <section id="Reservas" class="section m-b-50">
             <div class="container text-center">
                 <h2 class="title text-center m-b-0">Reservas en l&iacute;nea</h2>
                 <p class="subtitle m-b-40">Recuerde que todos nuestros servicios estan sujetos a comprobantes de pago, Boletas o Facturas.</p>
@@ -248,7 +245,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="solicitarReserva();">Reservar</button>
                 </div>
             </div>
-		</section>
+        </section>
         <section class="bar-chat">
                 <div class="icons-center">
                     <button id="chat" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
@@ -270,37 +267,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <i class="mdi mdi-close"></i>
             </button>
         </div>
-		<footer>
+        <footer>
             <div class="container">
                 <p>&copy;2017 Transportes Rosenverg S.A.C</p>
                 <p class="font-light">Cal. 15 Mza. 14A Lote. 16 A.H. Laura Caller - Los Olivos</p>
-                <p class="font-light">Celular: <a href="tel:+51996312529">996312529</a> - Correo: <a href="mailto:taxirosenverg@gmail.com">taxirosenverg@gmail.com</a></p>
+                <p class="font-light">Celular: <a href="tel:+51996312529">+51996312529</a> - Correo: <a href="mailto:taxirosenverg@gmail.com">taxirosenverg@gmail.com</a></p>
             </div>
         </footer>
 
-    	<script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/dist/js/bootstrap-select.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>moment/moment.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>datetimepicker/js/bootstrap-material-datetimepicker.js?v=<?php echo time();?>"></script>
-        <script src="<?php echo RUTA_PLUGINS?>jquery-mask/jquery.mask.min.js?v=<?php echo time();?>"></script>  	
-    	<script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>  	
-    	<script src="<?php echo RUTA_PLUGINS?>scrollflow/js/eskju.jquery.scrollflow.min.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_PLUGINS?>flexSlider/jquery.flexslider.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_PLUGINS?>JiSlider/JiSlider.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_PLUGINS?>jquery-mask/jquery.mask.min.js?v=<?php echo time();?>"></script>      
+        <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/js/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
-    	<script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
-    	<script type="text/javascript">
+        <script src="<?php echo RUTA_JS?>index.js?v=<?php echo time();?>"></script>
+        <script type="text/javascript">
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
                 $('select').selectpicker('mobile');
             } else {
                 $('select').selectpicker();
             }
-            initButtonCalendarDaysMaxToday('fecha');
+            initButtonCalendarDaysMinToday('fecha');
             initMaskInputs('fecha');
             $('#chat').on('click',function(e){
                 e.stopPropagation();
@@ -309,7 +303,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $('#chat-close').click(function(){
                 $('body').toggleClass('activeFix');
             });
-    	</script>
+        </script>
     </body>
 </html>
 
