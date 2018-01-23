@@ -18,7 +18,7 @@ $('.mdl-icon .mdl-button').click(function(){
 	$(this).closest('.mdl-input-group').find('.mdl-textfield').addClass('is-dirty');
 });
 //DAYS MAX TODAY
-function initCalendarDaysMaxToday(id, currentDate, fecha){
+function initCalendarDaysMinToday(id, currentDate, fecha){
 	var startDate = new Date();
 	 if (currentDate != undefined) {
             var startDate = new Date(currentDate);
@@ -29,10 +29,10 @@ function initCalendarDaysMaxToday(id, currentDate, fecha){
 		time	: false, 
 		format 	: 'DD/MM/YYYY',
 		currentDate : startDate,
-		maxDate : (fecha == undefined) ? new Date() : fecha
+		minDate : (fecha == undefined) ? new Date() : fecha
 	});
 }
-function initButtonCalendarDaysMaxToday(idButton, currentDate, fecha) {
+function initButtonCalendarDaysMinToday(idButton, currentDate, fecha) {
 	var text 		= idButton;
 	var id 			= $("#"+text);
 	var newInput	= null;
@@ -48,7 +48,7 @@ function initButtonCalendarDaysMaxToday(idButton, currentDate, fecha) {
 			    onchange 	: 'clonarFecha($(this))',
 			    style		: 'position: absolute; top: 40px; border: transparent; color: transparent; z-index: -4'
 			}).appendTo(iconButton);
-			initCalendarDaysMaxToday(newInput, currentDate, fecha);
+			initCalendarDaysMinToday(newInput, currentDate, fecha);
 		}
 		$("#"+newInput).focus();			
 	});		
