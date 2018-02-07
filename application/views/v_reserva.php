@@ -66,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </nav>
         </div>
-        <section id="Reservas" class="section m-b-50">
+        <section id="Reservas" class="section m-b-50" style="height: 100vh;">
             <div class="container text-center">
                 <h2 class="title text-center m-b-0">Reservas en l&iacute;nea</h2>
                 <p class="subtitle m-b-40">Recuerde que todos nuestros servicios estan sujetos a comprobantes de pago, Boletas o Facturas.</p>
